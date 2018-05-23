@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 app.get('/:date', (request, response) => {
   const query = request.params.date;
-  if (Number.isInteger(query)) {
+  if (Number.isInteger(Number(query))) {
     const unix = query;
     const naturalDate = dateformat(unix * 1000, 'longDate');
     response.status(500).json({
@@ -19,7 +19,7 @@ app.get('/:date', (request, response) => {
       naturalDate,
     });
   } else {
-    const unix = Date.parse(query);
+    const unix = Date.parse(query) / 1000;
     const naturalDate = query;
     response.status(500).json({
       unix,
