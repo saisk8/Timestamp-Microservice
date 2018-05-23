@@ -1,0 +1,35 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "A Timestamp Microservice that returns a natural and UNIX date",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somanath08/Timestamp-Microservice.git"
+  },
+  "keywords": [
+    "Timestamp",
+    "Microservice",
+    "Freecodecamp"
+  ],
+  "author": "Sai Somanath Komanduri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somanath08/Timestamp-Microservice/issues"
+  },
+  "homepage": "https://github.com/somanath08/Timestamp-Microservice#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
