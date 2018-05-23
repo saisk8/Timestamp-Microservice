@@ -2,9 +2,10 @@
   "name": "timestamp-microservice",
   "version": "1.0.0",
   "description": "A Timestamp Microservice that returns a natural and UNIX date",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "eslint-plugin-react": "^7.8.2"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   }
 }
