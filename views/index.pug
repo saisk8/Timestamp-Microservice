@@ -6,25 +6,23 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     // Bootstrap CSS
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB', crossorigin='anonymous')
-    link(rel='stylesheet', href='../public/style.css')
+    link(rel='stylesheet', href='/style.css', type='text/css')
     title Timestamp Microservice
   body.container
-  div.jumbotron
-    h1.center Timestamp Microservice
-    p.center.justify This is a API project for freecodecamp's Backend course. 
-    h3.The project has the following user stories
+  div.jumbotron.text-justify
+    h1.text-center Timestamp Microservice
+    p.text-center.justify This is a API project for freecodecamp's Backend course. 
+    h3 The project has the following user stories
     ol
       li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
       li If it does, it returns both the Unix timestamp and the natural language form of that date.
       li If it does not contain a date or Unix timestamp, it returns null for those properties.
     
   h2 Example Usage:
-  pre
-    code url 1
-    br
-    code url 2
+  code url 1
+  br
+  code url 2
   h2 Example Output:
-  pre 
   code { "unix": 1450137600, "natural": "December 15, 2015" }
   // jQuery first, then Popper.js, then Bootstrap JS
   script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
